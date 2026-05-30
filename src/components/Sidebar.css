@@ -1,0 +1,58 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: #1e1e2f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.contenedor-logo {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+}
+
+.titulo-logo {
+  font-size: 24px;
+  margin: 0;
+}
+
+.resaltado-logo {
+  color: #00d2ff;
+}
+
+.lista-enlaces {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-enlace {
+  width: 100%;
+}
+
+.link-enlace {
+  display: block;
+  text-decoration: none;
+  color: #a0a0b0;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.link-enlace:hover {
+  background-color: #2a2a3f;
+  color: #00d2ff;
+}
