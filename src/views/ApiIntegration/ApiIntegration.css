@@ -1,0 +1,113 @@
+.contenedor-api {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.titulo-api {
+  color: #2c3e50;
+  margin-bottom: 5px;
+  font-size: 2rem;
+}
+
+.descripcion-api {
+  color: #7f8c8d;
+  margin-bottom: 25px;
+}
+
+.mensaje-error {
+  background-color: #ffcccc;
+  color: #cc0000;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.mensaje-cargando {
+  font-size: 1.5rem;
+  color: #34495e;
+  padding: 50px 0;
+}
+
+.grilla-personajes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.tarjeta-personaje {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.tarjeta-personaje:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.imagen-personaje {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.nombre-personaje {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.estado-personaje, .especie-personaje {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.paginacion-api {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.btn-paginacion {
+  padding: 12px 25px;
+  background-color: #11b0c8; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.btn-paginacion:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.btn-paginacion:hover:not(:disabled) {
+  background-color: #0d8ca1;
+}
+
+.indicador-pagina {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  min-width: 150px;
+}
