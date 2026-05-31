@@ -1,0 +1,22 @@
+[
+  { "id": 1, "titulo": "Inception", "genero": "Ciencia Ficción", "año": 2010 },
+  { "id": 2, "titulo": "Kill Bill: Vol. 1", "genero": "Acción", "año": 2003 },
+  { "id": 3, "titulo": "Interstellar", "genero": "Ciencia Ficción", "año": 2014 },
+  { "id": 4, "titulo": "Gladiator", "genero": "Acción", "año": 2000 },
+  { "id": 5, "titulo": "The Lord of the Rings", "genero": "Fantasía", "año": 2001 },
+  { "id": 6, "titulo": "Avatar", "genero": "Ciencia Ficción", "año": 2009 },
+  { "id": 7, "titulo": "The Departed", "genero": "Crimen", "año": 2006 },
+  { "id": 8, "titulo": "Django Unchained", "genero": "Western", "año": 2012 },
+  { "id": 9, "titulo": "Whiplash", "genero": "Drama", "año": 2014 },
+  { "id": 10, "titulo": "Parasite", "genero": "Suspense", "año": 2019 },
+  { "id": 11, "titulo": "Mad Max: Fury Road", "genero": "Acción", "año": 2015 },
+  { "id": 12, "titulo": "The Wolf of Wall Street", "genero": "Comedia Negra", "año": 2013 },
+  { "id": 13, "titulo": "Shutter Island", "genero": "Suspense", "año": 2010 },
+  { "id": 14, "titulo": "Inglourious Basterds", "genero": "Guerra", "año": 2009 },
+  { "id": 15, "titulo": "Catch Me If You Can", "genero": "Biografía", "año": 2002 },
+  { "id": 16, "titulo": "The Social Network", "genero": "Drama", "año": 2010 },
+  { "id": 17, "titulo": "No Country for Old Men", "genero": "Crimen", "año": 2007 },
+  { "id": 18, "titulo": "The Grand Budapest Hotel", "genero": "Comedia", "año": 2014 },
+  { "id": 19, "titulo": "There Will Be Blood", "genero": "Drama", "año": 2007 },
+  { "id": 20, "titulo": "Memento", "genero": "Misterio", "año": 2000 }
+]

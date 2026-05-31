@@ -1,0 +1,69 @@
+.contenedor-explorador {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contenedor-explorador h2 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.caja-buscador {
+  margin: 20px 0;
+}
+
+.input-buscador {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-buscador:focus {
+  border-color: #4facfe;
+}
+
+.resultados-busqueda {
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #666;
+}
+
+.grilla-datos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta-dato {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border-left: 5px solid #4facfe;
+  transition: transform 0.2s;
+}
+
+.tarjeta-dato:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.tarjeta-dato h3 {
+  margin-bottom: 10px;
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.mensaje-vacio {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #888;
+  font-weight: bold;
+}
