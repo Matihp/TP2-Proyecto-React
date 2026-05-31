@@ -1,0 +1,148 @@
+.contenedor-perfil-maria {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tarjeta-presentacion-maria {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border-top: 5px solid #fe5196;
+}
+
+.foto-placeholder-maria {
+  font-size: 80px;
+  background-color: #fff0f5;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  border: 4px solid #fe5196;
+}
+
+.bio-maria {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.seccion-habilidades-maria, .seccion-carrusel-maria, .seccion-redes-maria {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.contenedor-iconos-maria {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
+  font-size: 45px;
+}
+
+.icono-tech-maria {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.icono-tech-maria:hover {
+  transform: scale(1.3) translateY(-10px) rotate(5deg);
+  filter: drop-shadow(0 5px 5px rgba(254,81,150,0.3));
+}
+
+.barra-contenedor-maria {
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: bold;
+  color: #444;
+}
+
+.barra-fondo-maria {
+  background-color: #f0e6ea;
+  height: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.barra-progreso-maria {
+  height: 100%;
+  background: linear-gradient(90deg, #f77062 0%, #fe5196 100%);
+  border-radius: 15px;
+  transition: width 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.carrusel-pantalla-maria {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffafb;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #f8d7e3;
+}
+
+.carrusel-contenido-maria {
+  text-align: center;
+  flex: 1;
+}
+
+.carrusel-contenido-maria h4 {
+  color: #d13076;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.btn-carrusel-maria {
+  background-color: #fe5196;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold;
+}
+
+.btn-carrusel-maria:hover {
+  background-color: #d13076;
+  transform: scale(1.05);
+}
+
+.contenedor-redes-maria {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-red-maria {
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-red-maria.github-maria { 
+  background-color: #24292e;
+ }
+.btn-red-maria.linkedin-maria {
+   background-color: #0077b5; 
+  }
+.btn-red-maria.portfolio-maria { 
+  background-color: #1769ff;
+ }
+
+.btn-red-maria:hover {
+  transform: scale(1.15) translateY(-3px);
+  box-shadow: 0 8px 15px rgba(254,81,150,0.4);
+}
