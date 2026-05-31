@@ -2,6 +2,10 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import HomeDashboard from './views/HomeDashboard/HomeDashboard';
+import MatiasProfile from './views/MatiasProfile/MatiasProfile';
+import MariaProfile from './views/MariaProfile/MariaProfile';
+import DataExplorer from './views/DataExplorer/DataExplorer';
+import ApiIntegration from './views/ApiIntegration/ApiIntegration';
 import Bitacora from './views/Bitacora/Bitacora';
 import RenderTree from './views/RenderTree/RenderTree';
 
@@ -11,10 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomeDashboard />} />
-          <Route path="matias" element={<div>Matias vacío</div>} />
-          <Route path="maria" element={<div>Maria vacío</div>} />
-          <Route path="datos" element={<div>Datos vacío</div>} />
-          <Route path="api" element={<div>API vacía</div>} />
+          <Route path="matias" element={<MatiasProfile />} />
+          <Route path="maria" element={<MariaProfile />} />
+          <Route path="datos" element={<DataExplorer />} />
+          <Route path="api" element={<ApiIntegration />} />
           <Route path="galeria" element={<div>Galería vacía</div>} />
           <Route path="bitacora" element={<Bitacora />} />
           <Route path="arbol" element={<RenderTree />} />
