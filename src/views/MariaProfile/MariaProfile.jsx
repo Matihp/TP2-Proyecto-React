@@ -79,9 +79,9 @@ const MariaProfile = () => {
       <div className="seccion-redes-maria">
         <h3>Conecta conmigo</h3>
         <div className="contenedor-redes-maria">
-          <a href="https://github.com/Marialopez2020" className="btn-red-maria github-maria">GitHub</a>
-          <a href="https://www.linkedin.com/in/maria-lopez-470862243/" className="btn-red-maria linkedin-maria">LinkedIn</a>
-          <a href="https://pfo-1-maria-lopez.vercel.app/" className="btn-red-maria portfolio-maria">Portfolio</a>
+          <a href="https://github.com/Marialopez2020" className="btn-red-maria github-maria">🐱 GitHub</a>
+          <a href="https://www.linkedin.com/in/maria-lopez-470862243/" className="btn-red-maria linkedin-maria">💼 LinkedIn</a>
+          <a href="https://pfo-1-maria-lopez.vercel.app/" className="btn-red-maria portfolio-maria">✨ Portfolio</a>
         </div>
       </div>
     </div>

@@ -25,19 +25,19 @@
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .logo-icono {
   font-size: 20px;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .titulo-logo {
   font-size: 24px;
   margin: 0;
   letter-spacing: 0.5px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .resaltado-logo {
@@ -55,7 +55,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 7px;
 }
 
 .item-enlace {
@@ -86,7 +86,7 @@
   color: #ffffff;
   transform: translateX(5px);
   border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .link-enlace:hover .icono-enlace {
@@ -96,7 +96,7 @@
 .link-enlace.activo {
   background-color: #ffffff;
   color: #a85812;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transform: translateX(5px);
 }
 
@@ -106,15 +106,15 @@
 
 .sidebar-footer {
   margin-top: auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
   text-align: center;
 }
 
 .info-version {
   font-size: 14px;
   color: #ffebd1;
-  font-weight: bold;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
 }
 
 .sub-info {

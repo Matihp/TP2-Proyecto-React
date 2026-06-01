@@ -79,9 +79,9 @@ const MatiasProfile = () => {
       <div className="seccion-redes">
         <h3>Mis Redes Sociales</h3>
         <div className="contenedor-redes">
-          <a href="https://github.com/Matihp" className="btn-red github">GitHub</a>
-          <a href="https://www.linkedin.com/in/matias-contreras-692953223/" className="btn-red linkedin">LinkedIn</a>
-          <a href="https://contrerasmatias.dev.ar/" className="btn-red portafolio">Portafolio</a>
+          <a href="https://github.com/Matihp" className="btn-red github">🐱 GitHub</a>
+          <a href="https://www.linkedin.com/in/matias-contreras-692953223/" className="btn-red linkedin">💼 LinkedIn</a>
+          <a href="https://contrerasmatias.dev.ar/" className="btn-red portafolio">🚀 Portafolio</a>
         </div>
       </div>
     </div>

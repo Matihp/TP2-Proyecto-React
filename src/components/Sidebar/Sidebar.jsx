@@ -13,6 +13,7 @@ const Sidebar = ({ abierto, cerrar }) => {
     { path: '/api', name: 'API', icon: '🌐' },
     { path: '/galeria', name: 'Galería', icon: '🖼️' },
     { path: '/bitacora', name: 'Bitácora', icon: '📓' },
+    { path: '/arbol', name: 'Árbol UI', icon: '🌳' },
   ];
 
   return (
@@ -21,13 +22,13 @@ const Sidebar = ({ abierto, cerrar }) => {
         <div className="logo-icono">♾️</div>
         <h2 className="titulo-logo">Matrix<span className="resaltado-logo">Devs</span></h2>
       </div>
-      
+
       <div className="contenedor-enlaces">
         <ul className="lista-enlaces">
           {navItems.map((item) => (
             <li className="item-enlace" key={item.path}>
-              <Link 
-                to={item.path} 
+              <Link
+                to={item.path}
                 className={`link-enlace ${location.pathname === item.path ? 'activo' : ''}`}
                 onClick={cerrar}
               >
@@ -41,8 +42,7 @@ const Sidebar = ({ abierto, cerrar }) => {
 
       <div className="sidebar-footer">
         <div className="info-version">
-          <p>MatrixDevs v1.0</p>
-          <p className="sub-info">TP2 - React</p>
+          <p>MatrixDevs v1.0 - TP2 React</p>
         </div>
       </div>
     </aside>

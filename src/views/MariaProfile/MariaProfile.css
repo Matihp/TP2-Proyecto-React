@@ -121,28 +121,65 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .btn-red-maria {
-  padding: 12px 25px;
-  border-radius: 25px;
+  padding: 14px 30px;
+  border-radius: 8px;
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-red-maria::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
+}
+
+.btn-red-maria:hover::before {
+  opacity: 1;
 }
 
 .btn-red-maria.github-maria { 
-  background-color: #24292e;
- }
+  background: linear-gradient(135deg, #24292e 0%, #4a5568 100%);
+  box-shadow: 0 4px 15px rgba(36, 41, 46, 0.25);
+}
+
 .btn-red-maria.linkedin-maria {
-   background-color: #0077b5; 
-  }
+  background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.25);
+}
+
 .btn-red-maria.portfolio-maria { 
-  background-color: #1769ff;
- }
+  background: linear-gradient(135deg, #fe5196 0%, #f77062 100%);
+  box-shadow: 0 4px 15px rgba(254, 81, 150, 0.25);
+}
 
 .btn-red-maria:hover {
-  transform: scale(1.15) translateY(-3px);
-  box-shadow: 0 8px 15px rgba(254,81,150,0.4);
+  transform: translateY(-5px) scale(1.05);
+}
+
+.btn-red-maria.github-maria:hover {
+  box-shadow: 0 10px 25px rgba(36, 41, 46, 0.45);
+}
+
+.btn-red-maria.linkedin-maria:hover {
+  box-shadow: 0 10px 25px rgba(0, 119, 181, 0.45);
+}
+
+.btn-red-maria.portfolio-maria:hover {
+  box-shadow: 0 10px 25px rgba(254, 81, 150, 0.45);
 }
