@@ -59,7 +59,10 @@ const Bitacora = () => {
               <tr><td>31/05/2026</td><td>Matias</td><td>Construí la galería de imágenes interactiva con lightbox</td></tr>
               <tr><td>31/05/2026</td><td>Maria</td><td>Documenté el árbol de renderizado de la aplicación</td></tr>
               <tr><td>01/06/2026</td><td>Matias</td><td>Inicié el README y redacté la justificación de la migración a React</td></tr>
-              <tr><td>01/06/2026</td><td>Maria</td><td>Termine la estructura del README,redacté la Bitácora y arreglé problemas de Layout</td></tr>
+              <tr><td>01/06/2026</td><td>Maria</td><td>Completé la estructura inicial del README y documenté el flujo de trabajo</td></tr>
+              <tr><td>01/06/2026</td><td>Matias</td><td>Hice el Layout responsive (menú hamburguesa) e integré la Galería</td></tr>
+              <tr><td>01/06/2026</td><td>Maria</td><td>Ajustes estéticos finales del tema MatrixDevs y preparativos en index.html</td></tr>
+              <tr><td>01/06/2026</td><td>Matias</td><td>Actualicé la Bitácora con lo realizado y finalicé el README.md</td></tr>
             </tbody>
           </table>
         </div>
