@@ -60,7 +60,10 @@ En esta sección se presentan las vistas principales del sitio web:
 *Demostración del diseño responsive en dispositivos móviles con el menú hamburguesa.*
 
 ![Vista de Perfil Personal](capturas/perfil-matias.png)
-*Vista del perfil con barras animadas y carrusel de proyectos funcionales.*
+*Vista del perfil de Matias con barras animadas y carrusel de proyectos funcionales.*
+
+![Vista de Perfil Personal](capturas/perfil-maria.png)
+*Vista del perfil de Maria con barras animadas y carrusel de proyectos funcionales.*
 
 ![Buscador de Datos Locales](capturas/data-json.png)
 *Explorador de datos JSON con filtro de búsqueda en tiempo real.*
@@ -77,8 +80,17 @@ En esta sección se presentan las vistas principales del sitio web:
 ![Árbol de Componentes](capturas/arbol-de-componentes.png)
 *Esquema visual detallando la jerarquía del Árbol de Renderizado de la aplicación.*
 
-## Uso de Inteligencia Artificial
-* **Herramientas**: IA Gemini y UI-Avatars.
-* **Uso en Código**: Se consultó para diseñar la estructura de los componente ApiIntegration y DataExplorer(el buscador y la paginación), mejorar el diseño responsive y redactar este archivo `README.md` en formato markdown.
+## Funciones Dinámicas y Componentes Clave (JavaScript / React)
+Durante el desarrollo se implementaron las siguientes lógicas y Hooks de React:
+* **`useState`**: Gestión de estados locales. Se utilizó para controlar el menú hamburguesa en el `Layout`, manejar el texto del buscador en el `DataExplorer`, almacenar la página actual en `ApiIntegration` y cambiar las imágenes en el carrusel de los perfiles.
+* **`useEffect`**: Manejo de efectos secundarios. Principalmente utilizado para realizar las peticiones a la API externa y para detonar animaciones de entrada (ej: barras de progreso).
+* **`map()` y `filter()`**: Métodos nativos de arreglos en JavaScript. `map()` fue esencial para renderizar las tarjetas del JSON y los elementos de navegación. `filter()` se empleó en el `DataExplorer` para lograr la búsqueda en tiempo real.
+* **`fetch()`**: Utilizado dentro de funciones asíncronas (`async/await`) en `ApiIntegration` para obtener los datos de la API pública de Rick and Morty de forma dinámica.
+* **`useLocation`**: Hook de React Router DOM usado en el `Sidebar` para detectar la ruta actual (`location.pathname`) y aplicar la clase CSS `.activo` de manera condicional.
 
+## Uso de Inteligencia Artificial
+* **Herramientas Utilizadas**: IA Gemini.
+* **Uso en Código y Lógica**: Se consultó a Gemini como asistente técnico para diseñar la estructura lógica de los componentes más complejos, como el sistema de paginación en `ApiIntegration`, la lógica de filtrado del buscador y para mejorar el diseño responsive (Media Queries).
+* **Generación de Contenido**: Se utilizó la IA para optimizar la redacción de este archivo `README.md` en formato Markdown.
+* **Iconografía e Imágenes**: Para los avatares decidimos reemplazar imágenes generadas por emojis nativos (`👨‍💻`, `👩‍💻`) para un diseño más limpio.
 
