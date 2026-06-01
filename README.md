@@ -1,16 +1,28 @@
-# React + Vite
+# TP2 Proyecto React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Integrantes del grupo
+- **Matias Contreras** - https://github.com/Matihp
+- **Maria Lopez** - https://github.com/Marialopez2020
 
-Currently, two official plugins are available:
+## Descripción del Proyecto
+Este proyecto es la continuación y migración de nuestro Trabajo Práctico 1. Originalmente construido con HTML, CSS y JavaScript, ahora ha sido reconstruido totalmente utilizando **React** para crear una Single Page Application (SPA) dinámica y moderna.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologías Utilizadas
+- **React** (Librería principal UI)
+- **Vite** (Entorno de desarrollo y empaquetador)
+- **React Router DOM** (Navegación y rutas)
+- **CSS3** (Estilos, Grid, Flexbox, transiciones)
+- **JSON Local** (Base de datos simulada)
+- **Git/GitHub**: Control de versiones y trabajo colaborativo.
+- **Vercel**: Despliegue del proyecto.
 
-## React Compiler
+## Estructura de Archivos
+* `/`: index.html, package.json, vite.config.js y README.md.
+* `/src`: App.jsx y main.jsx.
+* `/src/components`: componentes estructurales como Layout, Navbar y Sidebar (con sus .css).
+* `/src/views`: MatiasProfile, MariaProfile, HomeDashboard, DataExplorer, ApiIntegration, Gallery, Bitacora y RenderTree (con sus .css).
+* `/src/data`: datos.json (base de datos simulada).
+* `/public`: imágenes, avatares de los integrantes y capturas de pantalla del proyecto.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Link de Producción (Vercel)
+🔗 [Enlace a la aplicación desplegada (Próximamente)](https://vercel.com/)
