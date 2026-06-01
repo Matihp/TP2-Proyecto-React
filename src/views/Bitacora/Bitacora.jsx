@@ -6,25 +6,33 @@ const Bitacora = () => {
     <div className="contenedor-bitacora">
       <h1>Bitácora de Proyecto</h1>
       
-      <section className="seccion-justificacion">
-        <h2>Justificación Técnica: Migración de HTML/JS a React</h2>
-        <p>
-          En el primer trabajo práctico utilizamos HTML puro, CSS y JavaScript. Aunque fue útil para aprender las bases de la web, a medida que la aplicación crecía en complejidad, el código se volvía más difícil de mantener. 
-        </p>
-        <p>
-          Para este segundo trabajo práctico se nos planteó el desafío de migrar el proyecto a <strong>React</strong>. Al llevar a cabo esta migración, pudimos comprobar en la práctica las siguientes ventajas frente al HTML/JS puro:
-        </p>
-        <ul>
-          <li><strong>Componentización:</strong> Ahora podemos dividir la interfaz en piezas reutilizables (como el Sidebar, el Navbar y las tarjetas), evitando repetir código en múltiples archivos HTML.</li>
-          <li><strong>Estado y Reactividad:</strong> Con hooks como <code>useState</code> y <code>useEffect</code>, la interfaz se actualiza automáticamente cuando cambian los datos (como vimos en el buscador JSON o en la Galería), sin tener que manipular el DOM manualmente.</li>
-          <li><strong>Enrutamiento (SPA):</strong> Gracias a <code>react-router-dom</code>, convertimos el sitio en una <em>Single Page Application</em>. Ahora la navegación es instantánea y la página no se recarga completamente al cambiar de sección, dando una experiencia mucho más fluida.</li>
-        </ul>
-      </section>
+      <div className="secciones-superiores">
+        <section className="seccion-justificacion">
+          <h2>Migración a React</h2>
+          <p>
+            Al migrar de HTML puro a <strong>React</strong> comprobamos grandes ventajas:
+          </p>
+          <ul>
+            <li><strong>Componentización:</strong> Dividimos la interfaz en piezas reutilizables (Sidebar, Navbar) evitando repetir código.</li>
+            <li><strong>Reactividad:</strong> Usando <code>useState</code>, la interfaz se actualiza sola al cambiar los datos (ej: buscador JSON).</li>
+            <li><strong>SPA:</strong> Con <code>react-router-dom</code> la navegación es instantánea sin recargar la página.</li>
+          </ul>
+        </section>
 
-      <section className="seccion-flujo-trabajo">
-        <h2>Flujo de Trabajo y Roles</h2>
-        <p><em>(Pendiente de documentar por María...)</em></p>
-      </section>
+        <section className="seccion-flujo-trabajo">
+          <h2>Flujo de Trabajo y Roles</h2>
+          <p>
+            Utilizamos <strong>Trello</strong> para organizar visualmente qué componente le tocaba a cada uno (Matias o Maria) y evitar pisarnos.
+          </p>
+          <p>
+            En Git, para evitar conflictos (merge conflicts), estructuramos el proyecto separando los archivos JSX y CSS de cada vista.
+          </p>
+          <ul>
+            <li><strong>Matias:</strong> Layout, explorador JSON, su perfil personal y Galería.</li>
+            <li><strong>Maria:</strong> Sidebar, Dashboard, API (Rick and Morty), su perfil personal y Árbol de renderizado.</li>
+          </ul>
+        </section>
+      </div>
 
       <section className="seccion-historial">
         <h2>Historial de Desarrollo (Commits)</h2>
@@ -51,6 +59,7 @@ const Bitacora = () => {
               <tr><td>31/05/2026</td><td>Matias</td><td>Construí la galería de imágenes interactiva con lightbox</td></tr>
               <tr><td>31/05/2026</td><td>Maria</td><td>Documenté el árbol de renderizado de la aplicación</td></tr>
               <tr><td>01/06/2026</td><td>Matias</td><td>Inicié el README y redacté la justificación de la migración a React</td></tr>
+              <tr><td>01/06/2026</td><td>Maria</td><td>Termine la estructura del README,redacté la Bitácora y arreglé problemas de Layout</td></tr>
             </tbody>
           </table>
         </div>

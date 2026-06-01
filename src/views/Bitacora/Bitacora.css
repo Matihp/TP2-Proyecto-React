@@ -1,6 +1,150 @@
 .contenedor-bitacora {
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 1200px; /* Aumentamos para aprovechar mejor el espacio a la derecha */
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor-bitacora h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.secciones-superiores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .secciones-superiores {
+    grid-template-columns: 1fr;
+  }
+}
+
+.seccion-justificacion, .seccion-flujo-trabajo, .seccion-historial {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-left: 6px solid #4facfe;
+  transition: transform 0.3s ease;
+}
+
+.seccion-historial {
+  margin-bottom: 40px;
+}
+
+.seccion-justificacion:hover, .seccion-flujo-trabajo:hover, .seccion-historial:hover {
+  transform: translateY(-5px);
+}
+
+.seccion-flujo-trabajo {
+  border-left-color: #fe5196;
+}
+
+.seccion-historial {
+  border-left-color: #11b0c8;
+}
+
+.contenedor-bitacora h2 {
+  color: #34495e;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f1f2f6;
+  font-size: 1.5rem;
+}
+
+.contenedor-bitacora p {
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+.contenedor-bitacora ul {
+  line-height: 1.7;
+  color: #555;
+  padding-left: 20px;
+}
+
+.contenedor-bitacora li {
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   DISEÑO DE LA TABLA - ESTILO LIMPIO Y COLORIDO
+========================================= */
+
+.contenedor-tabla {
+  overflow-x: auto;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #e1e4e8;
+}
+
+.tabla-bitacora {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Encabezados más sutiles (sin degradado fuerte) */
+.tabla-bitacora th {
+  background-color: #f4f6f8;
+  color: #2c3e50;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  padding: 18px 15px;
+  border-bottom: 2px solid #d1d5da;
+}
+
+.tabla-bitacora td {
+  padding: 16px 15px;
+  border-bottom: 1px solid #eaecef;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+/* Darle color de fondo distinto a cada columna para romper la monotonía */
+
+/* Columna 1: Fecha (Gris muy suave) */
+.tabla-bitacora td:first-child {
+  background-color: #fdfdfe;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #6a737d;
+  white-space: nowrap;
+}
+
+/* Columna 2: Autor (Azul/Celeste pastel) */
+.tabla-bitacora td:nth-child(2) {
+  background-color: #f0f7ff;
+  color: #0366d6;
+  font-weight: bold;
+}
+.tabla-bitacora td:nth-child(2)::before {
+  content: "👤 ";
+  font-size: 0.85rem;
+}
+
+/* Columna 3: Descripción (Blanco puro con texto oscuro) */
+.tabla-bitacora td:nth-child(3) {
+  background-color: #ffffff;
+  color: #24292e;
+  line-height: 1.5;
+}
+
+/* Hover general de la fila */
+.tabla-bitacora tbody tr:hover td {
+  background-color: #fff9ea; /* Un tonito amarillo muy sutil al pasar el mouse por toda la fila */
 }
