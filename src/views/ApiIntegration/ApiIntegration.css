@@ -1,108 +1,143 @@
 .contenedor-api {
-  padding: 20px;
-  max-width: 1000px;
+  padding: 30px;
+  max-width: 1100px;
   margin: 0 auto;
   text-align: center;
   font-family: Arial, sans-serif;
+  background-color: transparent;
 }
 
 .titulo-api {
-  color: #2c3e50;
+  color: #1a1a24; 
   margin-bottom: 5px;
-  font-size: 2rem;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(151, 206, 76, 0.8); 
 }
 
 .descripcion-api {
-  color: #7f8c8d;
-  margin-bottom: 25px;
+  color: #555;
+  margin-bottom: 35px;
+  font-size: 1.1rem;
 }
 
 .mensaje-error {
-  background-color: #ffcccc;
-  color: #cc0000;
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff4d4d;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-bottom: 20px;
+  border: 1px solid #ff4d4d;
   font-weight: bold;
 }
 
 .mensaje-cargando {
   font-size: 1.5rem;
-  color: #34495e;
-  padding: 50px 0;
+  color: #97ce4c;
+  padding: 80px 0;
+  animation: pulso 1.5s infinite;
+}
+
+@keyframes pulso {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; text-shadow: 0 0 15px #97ce4c; }
+  100% { opacity: 0.5; }
 }
 
 .grilla-personajes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 25px;
-  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
 .tarjeta-personaje {
-  background-color: white;
-  border-radius: 12px;
+  background-color: #242430;
+  border-radius: 16px;
   padding: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #eee;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  border: 1px solid #3a3a4a;
+  display: flex;
+  flex-direction: column;
 }
 
 .tarjeta-personaje:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 25px rgba(151, 206, 76, 0.2);
+  border-color: #97ce4c;
 }
 
 .imagen-personaje {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-bottom: 15px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.tarjeta-personaje:hover .imagen-personaje {
+  border-color: #97ce4c;
 }
 
 .nombre-personaje {
-  font-size: 1.2rem;
-  margin: 0 0 10px 0;
-  color: #2c3e50;
+  font-size: 1.4rem;
+  margin: 0 0 15px 0;
+  color: #ffffff;
+  font-weight: 800;
 }
 
 .estado-personaje, .especie-personaje {
   font-size: 0.95rem;
-  color: #555;
+  color: #c0c0d0;
   margin: 5px 0;
   text-align: left;
+  background: rgba(255,255,255,0.05);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.estado-personaje strong, .especie-personaje strong {
+  color: #97ce4c;
 }
 
 .paginacion-api {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-top: 40px;
+  gap: 25px;
+  margin-top: 20px;
   padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  border: 1px solid #e9ecef;
+  background-color: #242430;
+  border-radius: 12px;
+  border: 1px solid #3a3a4a;
 }
 
 .btn-paginacion {
   padding: 12px 25px;
-  background-color: #11b0c8; 
-  color: white;
+  background-color: #97ce4c; 
+  color: #1a1a24;
   border: none;
-  border-radius: 8px;
+  border-radius: 25px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 1rem;
-  transition: background-color 0.2s;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .btn-paginacion:disabled {
-  background-color: #cccccc;
+  background-color: #3a3a4a;
+  color: #666;
   cursor: not-allowed;
 }
 
 .btn-paginacion:hover:not(:disabled) {
-  background-color: #0d8ca1;
+  background-color: #a8e059;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(151, 206, 76, 0.4);
 }
 
 .indicador-pagina {

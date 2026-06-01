@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import './Gallery.css';
 
 const imagenes = [
-  { id: 1, url: 'https://picsum.photos/id/1015/600/400', titulo: 'Paisaje 1' },
-  { id: 2, url: 'https://picsum.photos/id/1016/600/400', titulo: 'Paisaje 2' },
-  { id: 3, url: 'https://picsum.photos/id/1018/600/400', titulo: 'Naturaleza' },
-  { id: 4, url: 'https://picsum.photos/id/1019/600/400', titulo: 'Atardecer' },
-  { id: 5, url: 'https://picsum.photos/id/1020/600/400', titulo: 'Montañas' },
-  { id: 6, url: 'https://picsum.photos/id/1021/600/400', titulo: 'Bosque' },
-  { id: 7, url: 'https://picsum.photos/id/1022/600/400', titulo: 'Cielo Estrellado' },
-  { id: 8, url: 'https://picsum.photos/id/1023/600/400', titulo: 'Oceano' }
+  { id: 1, url: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg', titulo: 'Rick Sanchez' },
+  { id: 2, url: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg', titulo: 'Morty Smith' },
+  { id: 3, url: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg', titulo: 'Summer Smith' },
+  { id: 4, url: 'https://rickandmortyapi.com/api/character/avatar/4.jpeg', titulo: 'Beth Smith' },
+  { id: 5, url: 'https://rickandmortyapi.com/api/character/avatar/5.jpeg', titulo: 'Jerry Smith' },
+  { id: 6, url: 'https://rickandmortyapi.com/api/character/avatar/47.jpeg', titulo: 'Birdperson' },
+  { id: 7, url: 'https://rickandmortyapi.com/api/character/avatar/118.jpeg', titulo: 'Evil Morty' },
+  { id: 8, url: 'https://rickandmortyapi.com/api/character/avatar/242.jpeg', titulo: 'Mr. Meeseeks' }
 ];
 
 const Gallery = () => {
