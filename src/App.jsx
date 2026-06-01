@@ -8,6 +8,7 @@ import DataExplorer from './views/DataExplorer/DataExplorer';
 import ApiIntegration from './views/ApiIntegration/ApiIntegration';
 import Bitacora from './views/Bitacora/Bitacora';
 import RenderTree from './views/RenderTree/RenderTree';
+import Gallery from './views/Gallery/Gallery';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="maria" element={<MariaProfile />} />
           <Route path="datos" element={<DataExplorer />} />
           <Route path="api" element={<ApiIntegration />} />
-          <Route path="galeria" element={<div>Galería vacía</div>} />
+          <Route path="galeria" element={<Gallery />} />
           <Route path="bitacora" element={<Bitacora />} />
           <Route path="arbol" element={<RenderTree />} />
         </Route>

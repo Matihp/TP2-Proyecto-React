@@ -1,22 +1,50 @@
 import React from 'react';
 import './Sidebar.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({ abierto, cerrar }) => {
+  const location = useLocation();
+
+  const navItems = [
+    { path: '/', name: 'Home', icon: '🏠' },
+    { path: '/matias', name: 'Matias', icon: '👨‍💻' },
+    { path: '/maria', name: 'Maria', icon: '👩‍💻' },
+    { path: '/datos', name: 'Datos', icon: '📊' },
+    { path: '/api', name: 'API', icon: '🌐' },
+    { path: '/galeria', name: 'Galería', icon: '🖼️' },
+    { path: '/bitacora', name: 'Bitácora', icon: '📓' },
+  ];
+
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${abierto ? 'sidebar-abierto' : ''}`}>
       <div className="contenedor-logo">
-        <h2 className="titulo-logo">React<span className="resaltado-logo">Team</span></h2>
+        <div className="logo-icono">♾️</div>
+        <h2 className="titulo-logo">Matrix<span className="resaltado-logo">Devs</span></h2>
       </div>
-      <ul className="lista-enlaces">
-        <li className="item-enlace"><Link to="/" className="link-enlace">Home</Link></li>
-        <li className="item-enlace"><Link to="/matias" className="link-enlace">Matias</Link></li>
-        <li className="item-enlace"><Link to="/maria" className="link-enlace">Maria</Link></li>
-        <li className="item-enlace"><Link to="/datos" className="link-enlace">Datos</Link></li>
-        <li className="item-enlace"><Link to="/api" className="link-enlace">API</Link></li>
-        <li className="item-enlace"><Link to="/galeria" className="link-enlace">Galeria</Link></li>
-        <li className="item-enlace"><Link to="/bitacora" className="link-enlace">Bitacora</Link></li>
-      </ul>
+      
+      <div className="contenedor-enlaces">
+        <ul className="lista-enlaces">
+          {navItems.map((item) => (
+            <li className="item-enlace" key={item.path}>
+              <Link 
+                to={item.path} 
+                className={`link-enlace ${location.pathname === item.path ? 'activo' : ''}`}
+                onClick={cerrar}
+              >
+                <span className="icono-enlace">{item.icon}</span>
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="sidebar-footer">
+        <div className="info-version">
+          <p>MatrixDevs v1.0</p>
+          <p className="sub-info">TP2 - React</p>
+        </div>
+      </div>
     </aside>
   );
 };

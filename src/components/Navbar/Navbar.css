@@ -4,10 +4,37 @@
   border-bottom: 1px solid #e0e0e0;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.boton-hamburguesa {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.boton-hamburguesa:hover {
+  background-color: #f0f0f0;
 }
 
 .texto-bienvenida {
   font-weight: bold;
   color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-superior {
+    justify-content: space-between;
+  }
+
+  .boton-hamburguesa {
+    display: block;
+  }
 }
