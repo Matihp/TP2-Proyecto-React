@@ -1,91 +1,222 @@
 .dashboard-principal {
-  padding: 40px;
+  padding: 30px;
   min-height: 100vh;
-  background-color: #f4f6f8;
-  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   color: #333;
 }
 
-.titulo-dashboard {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #2c3e50;
+.cabecera-principal {
+  background: linear-gradient(135deg, #1e1e2f 0%, #2a2a3f 100%);
+  border-radius: 20px;
+  padding: 50px 40px;
+  color: white;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
 }
 
-.subtitulo-dashboard {
+.cabecera-principal::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(219, 139, 59, 0.4) 0%, rgba(219, 139, 59, 0) 70%);
+  border-radius: 50%;
+}
+
+.contenido-cabecera {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.etiqueta-materia {
+  display: inline-block;
+  background: #db8b3b;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.titulo-cabecera {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.descripcion-cabecera {
   font-size: 18px;
-  color: #7f8c8d;
-  margin-bottom: 40px;
+  line-height: 1.6;
+  color: #a0a0b0;
+  margin: 0;
+}
+
+.seccion-estadisticas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.tarjeta-estadistica {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease;
+  border: 1px solid #edf2f7;
+}
+
+.tarjeta-estadistica:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.icono-estadistica {
+  font-size: 32px;
+  background: #fdf2e9;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.info-estadistica h3 {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-estadistica p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.titulo-seccion {
+  font-size: 28px;
+  color: #2d3748;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 800;
 }
 
 .grilla-tarjetas {
   display: flex;
-  gap: 30px;
+  gap: 40px;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .tarjeta-perfil {
   background-color: white;
-  border-radius: 12px;
-  padding: 30px;
-  width: 280px;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 320px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid #edf2f7;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta-perfil::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #db8b3b, #e67e22);
 }
 
 .tarjeta-perfil:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(219, 139, 59, 0.15);
 }
 
 .contenedor-avatar {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 20px auto;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 25px auto;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid #f0f0f0;
+  border: 5px solid white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf2e9;
 }
 
-.imagen-avatar {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.tarjeta-perfil:hover .contenedor-avatar {
+  transform: scale(1.05) rotate(5deg);
+}
+
+.avatar-emoji {
+  font-size: 70px;
 }
 
 .nombre-tarjeta {
-  font-size: 22px;
-  margin: 0 0 10px 0;
-  color: #2c3e50;
+  font-size: 24px;
+  margin: 0 0 8px 0;
+  color: #2d3748;
+  font-weight: 800;
 }
 
 .rol-tarjeta {
   font-size: 16px;
-  color: #7f8c8d;
-  margin-bottom: 25px;
+  color: #a0aec0;
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .boton-acceso {
-  background-color: #00d2ff;
+  background: linear-gradient(135deg, #db8b3b 0%, #b36314 100%);
   color: white;
   border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
+  padding: 14px 28px;
+  border-radius: 10px;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   width: 100%;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(219, 139, 59, 0.3);
 }
 
 .boton-acceso:hover {
-  background-color: #00b8e6;
+  background: linear-gradient(135deg, #e09b55 0%, #c46e17 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(219, 139, 59, 0.4);
 }
 
 @keyframes aparecerSuave {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -94,10 +225,51 @@
 }
 
 .animacion-entrada-1 {
-  animation: aparecerSuave 0.6s ease-out forwards;
+  animation: aparecerSuave 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 .animacion-entrada-2 {
-  animation: aparecerSuave 0.6s ease-out 0.2s forwards;
-  opacity: 0; /* Empieza oculto para esperar el delay */
+  animation: aparecerSuave 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s forwards;
+  opacity: 0;
+}
+
+/* ===== DISEÑO MOBILE Y TABLET ===== */
+@media screen and (max-width: 1100px) {
+  .cabecera-principal {
+    padding: 40px 30px;
+  }
+  .titulo-cabecera {
+    font-size: 34px;
+  }
+  .seccion-estadisticas {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-principal {
+    padding: 20px 15px;
+  }
+  
+  .cabecera-principal {
+    padding: 30px 20px;
+  }
+  
+  .titulo-cabecera {
+    font-size: 28px;
+  }
+  
+  .descripcion-cabecera {
+    font-size: 15px;
+  }
+  
+  .titulo-seccion {
+    font-size: 24px;
+  }
+
+  .grilla-tarjetas {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
